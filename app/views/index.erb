@@ -1,0 +1,8 @@
+<h1>POSTS</h1>
+
+<h2><font color="red"><%= params["msg"] if params["msg"] %></font></h2>
+<br>
+  <% @posts.each do |p| %>
+    <h2>Name: <%= p.name %></h2>
+    <h3>Post: <%= p.content %></h3>
+  <% end %>
